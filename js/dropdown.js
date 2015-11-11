@@ -25,8 +25,6 @@ function DropDown(id, opts){
 	<div class="drop_down_items">\
 		<div class="dd_scroll_wrap" id="dd_scroll'+this.dID+'"><div class="dd_scroll_slider"></div></div>\
 		<div id="dd_items_'+this.dID+'" class="drop_down_items_res" onmousedown="cancelEvent(event)"></div>\
-		<div class="dd_shadow"></div>\
-		<div class="dd_shadow2"></div>\
 	</div>';
 	el.innerHTML = cont;
 	this.scrollInit();
@@ -507,6 +505,3 @@ DropDown.prototype.scrollDrag = function(e){
 	addEvent(window.document, 'mousemove', Move);
 	addEvent(window.document, 'mouseup', Up);
 };
-
-
-

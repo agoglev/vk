@@ -81,6 +81,9 @@ input::-ms-clear {
 	left: -1px;
 	display: none;
 	z-index: 100;
+	box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.1);
 }
 
 .drop_down_items_res{
@@ -163,23 +166,6 @@ input::-ms-clear {
     position: absolute;
    	top: 4px;
     right: 3px;
-}
-
-.dd_shadow, .dd_shadow2{
-	position: absolute;
-	height: 1px;
-	opacity: 0.1;
-	filter: alpha(opacity=10);
-	background: 0px;
-	left:0px;
-	background: #000;
-	bottom: -2px;
-	width: 100%;
-}
-.dd_shadow2 {
-	opacity: 0.05;
-    filter: alpha(opacity=5);
-    bottom: -3px;
 }
 
 /* scroll bar */
